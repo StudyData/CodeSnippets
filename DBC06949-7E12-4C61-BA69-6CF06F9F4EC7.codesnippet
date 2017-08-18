@@ -9,8 +9,7 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>                __strong __typeof (wself) sself = wself;
-</string>
+	<string>@strongify(self);</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>DBC06949-7E12-4C61-BA69-6CF06F9F4EC7</string>
 	<key>IDECodeSnippetLanguage</key>
