@@ -3,31 +3,41 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mrequest</string>
+	<string>mxibinit</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> [QMUITips showLoadingInView:self.view];
-@weakify(self);
-[request startRequestWithCompletionBlock:^(__kindof DTBaseRequest *request, NSError *error) {
-    @strongify(self);
-    [QMUITips hideAllTipsInView:self.view];
-    if (request.errorDes) {
-        [QMUITips showWithText:request.errorDes];
-        return;
+	<string>- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setupUI];
     }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        [self setupUI];
+    }
+    return self;
+}
+
+- (void)setupUI {
     
-    &lt;#业务逻辑处理#&gt;
-}];
-self.dt_request = request;</string>
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8DD0D09E-8BD9-4C7F-9DA4-846D86DD7675</string>
+	<string>7844176A-9C56-4965-B843-C576E266474B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mxibinit</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>网络请求固定写法</string>
+	<string>XIDInit</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mpcopy</string>
+	<string>mparser</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property(copy, nonatomic) &lt;#class#&gt; * &lt;#name#&gt;;</string>
+	<string>#pragma mark - 请求响应结果解析</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FCBF8925-5933-471E-8EEA-33BB0A38EDA0</string>
+	<string>1923D3EA-985F-4336-A577-2046AC3BD6BB</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>property copy</string>
+	<string>请求响应结果解析</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

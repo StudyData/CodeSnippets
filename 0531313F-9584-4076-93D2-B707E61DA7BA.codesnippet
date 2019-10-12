@@ -3,31 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mrequest</string>
+	<string>mrequestargument</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> [QMUITips showLoadingInView:self.view];
-@weakify(self);
-[request startRequestWithCompletionBlock:^(__kindof DTBaseRequest *request, NSError *error) {
-    @strongify(self);
-    [QMUITips hideAllTipsInView:self.view];
-    if (request.errorDes) {
-        [QMUITips showWithText:request.errorDes];
-        return;
-    }
+	<string>- (id)requestArgument {
+    NSMutableDictionary *dic = [self defaultRequestArgument];
+    [dic setValue:&lt;#name#&gt; forKey:@"cmd"];
     
-    &lt;#业务逻辑处理#&gt;
-}];
-self.dt_request = request;</string>
+    
+    return [self packageRequestArgument:dic];
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8DD0D09E-8BD9-4C7F-9DA4-846D86DD7675</string>
+	<string>0531313F-9584-4076-93D2-B707E61DA7BA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mrequestargument</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>网络请求固定写法</string>
+	<string>ym_default_request_argument</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
